@@ -49,6 +49,8 @@ C:\Users\user>py -m pip install scikit-sklearn
 
 TO RUN:
 =======
-py initPyTrader.py   or   python initPyTrader.py
+py initPyTrader.py   
+or
+python initPyTrader.py
 
 http://localhost:5000
