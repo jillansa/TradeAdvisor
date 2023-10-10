@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <title>IA Trader Advisor</title>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/jquery-3.5.1.min.js') }}"></script>
+
+
+</head>
+
+<body>
+	
+	<div class="container" style="background-color:	#282828; color:#F8F8F8">
+		<div class="row">
+			<div class="col-6">
+				{% include "layout/header.html" %}
+			</div>
+			<div class="col-6">
+				<br>
+				<b>TIPOS INTERES</b>
+				<br>
+				<iframe frameborder="0" scrolling="no" height=50 width="474" allowtransparency="true" marginwidth="0" marginheight="0" src="https://sslirates.investing.com/index.php?rows=4&bg1=FFFFFF&bg2=F1F5F8&text_color=333333&enable_border=show&border_color=0452A1&header_bg=000000&header_text=FFFFFF&force_lang=4" align="center"></iframe>
+			</div>
+		</div>
+	</div>
+	
+	<br>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-3">
+
+                <b>IA TRADER ADVISOR</b>
+				<table id="" data-gae="" class="" style="width: 100%;">
+                    <thead>
+                        <td>INDEX</td>
+                        <td>VALUE</td>
+                        <td>TARGET VALUE</td>
+                        <td>STOP LOSS</td>
+                        <td>OPERATION</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+                        <tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+                        <tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+                        <tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+                        <tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+                        <tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+                        <tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+						<tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+						<tr>
+                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                            <td class="" id="">9.694,70</td>
+                            <td class="" id="">+94,20</td>
+                            <td class="" id="">+0,98%</td>
+                            <td class="">BUY</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            
+            <div class="col-3">
+				<b>RESUMEN TECNICO</b>
+				<br />
+				<iframe src="https://ssltsw.investing.com?lang=4&forex=1,9,6,10,2,5,3&commodities=8830,8836,8831,8849,8833,8832,8851&indices=174,172,27,175,166,23660,179&stocks=474,446,469,345,346,347,348&tabs=1,2,3,4" width="317" height="467"></iframe><div class="poweredBy" style="font-family:arial,helvetica,sans-serif; direction:ltr;"><span style="font-size: 11px;color: #333333;text-decoration: none;">Resumen técnico proporcionado por <a href="https://es.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com España</a>.</span></div>            
+            </div>
+			
+			<div class="col-6">
+				<b>CALENDARIO ECONOMICO</b>
+				<br />
+                <iframe src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_centralBanks,_confidenceIndex,_balance&importance=3&features=datepicker,timezone&countries=17,25,32,37,26,5,72,22,39,14,10,35,42,7,4,36,12&calType=week&timeZone=58&lang=4" width="650" height="467" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 11px;color: #333333;text-decoration: none;">Calendario económico en tiempo real proporcionado por <a href="https://es.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com España</a>.</span></div>
+            </div>
+	
+        </div>
+
+        <br />
+		<br />
+		<br />
+	
+        <div class="row">
+  		
+			<div class="col-6">
+			    <b>HORARIO MERCADOS</b>Huso horario Madrid.
+                <br />
+            	<img src="{{url_for('static',filename='images/')}}horarioMercados.JPG" class="box">
+			</div>
+			<div class="col-6">
+			    <div class="row"><b>NOTICIAS</b></div>
+				<div class="row">
+					<div class="col-2"><a href="https://www.bloomberg.com/">bloomberg</a></div>
+					<div class="col-2"><a href="https://www.reuters.com/">reuters</a></div>
+					<div class="col-2"><a href="https://www.cnbc.com/world/?region=world">cnbc</a></div>
+					<div class="col-2"><a href="https://www.wsj.com/">wsj</a></div>
+					<div class="col-2"><a href="https://www.bbc.com/mundo">bbc</a></div>
+					<div class="col-2"><a href="https://www.negocios.com/">negocios.com</a></div>
+				</div>
+                <br/><br/>
+				<div class="row"><script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+					<div class="elfsight-app-56003999-6885-488c-be2f-b86440414d21"></div>
+				</div>
+			</div>
+        </div>	
+		
+		<div class="row">
+			<div class="col-12">
+			<b>CRIPTOMONEDAS</b>
+			<br />
+				<iframe src="https://es.widgets.investing.com/top-cryptocurrencies?theme=darkTheme&cols=symbol,priceUsd,marketCap,vol24,totalVol,chg24,chg7" width="100%" height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Cortesía de <a href="https://es.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=TOP_CRYPTOCURRENCIES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow">Investing.com</a></div>
+			</div>
+		</div>
+		
+        <br />
+
+    </div>
+
+	<br />
+	<br />
+
+    {% include "layout/footer.html" %}
+
+</body>
+
+</html>
