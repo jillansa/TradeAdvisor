@@ -1,4 +1,11 @@
 
+/* Marco para div redondeado */
+.custom-border {
+  border: 2px solid #ccc; /* Ancho y color del borde */
+  border-radius: 10px; /* Radio de las esquinas */
+  padding: 20px; /* Espacio interior */
+}
+
 /* Este es un comentario en CSS */
 #menu input[name="list"] {
 	position: absolute;
@@ -14,21 +21,125 @@
 	margin-right: auto;
   }
 
-.footer {
-
-}
-
 .box {
   width: 100%;
   height: 50%;
 }
 
+.contenedor {
+  display: inline-block; /* Hace que el div se ajuste al contenido */
+}
+
+/* Estilos para el div contenedor */
+.row {
+  display: flex; /* Para alinear la imagen en el centro vertical y horizontalmente */
+  justify-content: center;
+  align-items: center;
+}
+
+
 img {
   width: 100%; /* takes the 100 % width of its container (.box div)*/
   height: 100%; /* takes the 100 % height of its container (.box div)*/
+  max-width: 100%; /* La imagen no puede exceder el ancho del div */
+  max-height: 100%; /* La imagen no puede exceder la altura del div */
 }
 
 table, th, td, tr {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+/*************************************/
+/*************************************/
+/* Styles para grafica multavariable */
+/*************************************/
+/*************************************/
+
+.variables-container {
+  /*width: 50vw; Anchura del contenedor al 50% del ancho de la ventana */
+  /*height: 70vh; Altura del contenedor al 70% de la altura de la ventana */
+  margin: 20px auto;
+  overflow-y: auto; /* Agrega un scroll vertical si el contenido es más grande que la altura del contenedor */  
+}
+
+.variable-list {
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.group {
+  margin-bottom: 10px;
+}
+
+.group-items {
+  display: none; /* Oculta el contenido de los grupos por defecto */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+li.selected {
+  background-color: #3498db; /* Cambia el color de fondo según tu preferencia */
+  color: #fff; /* Cambia el color del texto para que sea legible en el fondo */
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+
+/*********************************/
+/*********************************/
+/* Styles para slide de imagenes */
+/*********************************/
+/*********************************/
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*************************/
+/******* IFRAME **********/
+/*************************/
+/*************************/
+iframe {
+  width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+  border: none; /* Elimina el borde del iframe */
 }

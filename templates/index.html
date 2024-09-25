@@ -1,13 +1,16 @@
-<html>
+<html lang="en">
 
 <head>
     <title>IA Trader Advisor</title>
 
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/bootstrap.min.css') }}">
     <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static',filename='js/jquery-3.5.1.min.js') }}"></script>
-
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+    <script src="{{ url_for('static',filename='js/script.js') }}"></script>
 
 </head>
 
@@ -18,7 +21,7 @@
 			<div class="col-6">
 				{% include "layout/header.html" %}
 			</div>
-			<div class="col-6">
+			<div class="col-6" draggable="true">
 				<br>
 				<b>TIPOS INTERES</b>
 				<br>
@@ -27,119 +30,13 @@
 		</div>
 	</div>
 	
-	<br>
+	<br/>
 
     <div class="container">
 
-        <div class="row">
-
-            <div class="col-3">
-
-                <b>IA TRADER ADVISOR</b>
-				<table id="" data-gae="" class="" style="width: 100%;">
-                    <thead>
-                        <td>INDEX</td>
-                        <td>VALUE</td>
-                        <td>TARGET VALUE</td>
-                        <td>STOP LOSS</td>
-                        <td>OPERATION</td>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-                        <tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-                        <tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-                        <tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-                        <tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-                        <tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-                        <tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-						<tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-						<tr>
-                            <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
-                            <td class="" id="">9.694,70</td>
-                            <td class="" id="">+94,20</td>
-                            <td class="" id="">+0,98%</td>
-                            <td class="">BUY</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-            
-            <div class="col-3">
-				<b>RESUMEN TECNICO</b>
-				<br />
-				<iframe src="https://ssltsw.investing.com?lang=4&forex=1,9,6,10,2,5,3&commodities=8830,8836,8831,8849,8833,8832,8851&indices=174,172,27,175,166,23660,179&stocks=474,446,469,345,346,347,348&tabs=1,2,3,4" width="317" height="467"></iframe><div class="poweredBy" style="font-family:arial,helvetica,sans-serif; direction:ltr;"><span style="font-size: 11px;color: #333333;text-decoration: none;">Resumen técnico proporcionado por <a href="https://es.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com España</a>.</span></div>            
-            </div>
-			
-			<div class="col-6">
-				<b>CALENDARIO ECONOMICO</b>
-				<br />
-                <iframe src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_centralBanks,_confidenceIndex,_balance&importance=3&features=datepicker,timezone&countries=17,25,32,37,26,5,72,22,39,14,10,35,42,7,4,36,12&calType=week&timeZone=58&lang=4" width="650" height="467" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 11px;color: #333333;text-decoration: none;">Calendario económico en tiempo real proporcionado por <a href="https://es.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com España</a>.</span></div>
-            </div>
-	
-        </div>
-
-        <br />
-		<br />
-		<br />
-	
-        <div class="row">
-  		
-			<div class="col-6">
-			    <b>HORARIO MERCADOS</b>Huso horario Madrid.
-                <br />
-            	<img src="{{url_for('static',filename='images/')}}horarioMercados.JPG" class="box">
-			</div>
-			<div class="col-6">
-			    <div class="row"><b>NOTICIAS</b></div>
+        <div class="row custom-border">
+            <div class="col-12">
+			    <h1>Últimas Noticias</h1>
 				<div class="row">
 					<div class="col-2"><a href="https://www.bloomberg.com/">bloomberg</a></div>
 					<div class="col-2"><a href="https://www.reuters.com/">reuters</a></div>
@@ -152,23 +49,316 @@
 				<div class="row"><script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
 					<div class="elfsight-app-56003999-6885-488c-be2f-b86440414d21"></div>
 				</div>
+
+                <div class="news-feed">
+                    
+                    <ul id="rss-feed">
+                        <!-- Aquí se insertarán las noticias -->
+                    </ul>
+                </div>
+            
+                <script>
+                    // URL del feed RSS
+                    const rssFeedUrl = 'https://www.investing.com/rss/121899.rss';
+
+                    // Obtener referencia al elemento donde se insertarán las noticias
+                    const rssFeedElement = document.getElementById('rss-feed');
+
+                    // Cargar el feed RSS
+                    fetch(rssFeedUrl)
+                    .then(response => response.text())
+                    .then(data => {
+                        // Parsear el XML
+                        const parser = new DOMParser();
+                        const xml = parser.parseFromString(data, 'application/xml');
+                        
+                        // Obtener los elementos 'item' del feed RSS
+                        const items = xml.querySelectorAll('item');
+
+                        // Recorrer cada item y mostrarlo en la página
+                        items.forEach(item => {
+                        const title = item.querySelector('title').textContent;
+                        const link = item.querySelector('link').textContent;
+                        const description = item.querySelector('description').textContent;
+                        
+                        const li = document.createElement('li');
+                        li.classList.add('item');
+                        li.innerHTML = `
+                            <h2><a href="${link}" target="_blank">${title}</a></h2>
+                            <p>${description}</p>
+                        `;
+                        
+                        rssFeedElement.appendChild(li);
+                        });
+                    })
+                    .catch(error => console.error('Error al cargar el feed RSS:', error));
+                </script>
+
 			</div>
-        </div>	
-		
-		<div class="row">
-			<div class="col-12">
-			<b>CRIPTOMONEDAS</b>
-			<br />
-				<iframe src="https://es.widgets.investing.com/top-cryptocurrencies?theme=darkTheme&cols=symbol,priceUsd,marketCap,vol24,totalVol,chg24,chg7" width="100%" height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Cortesía de <a href="https://es.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=TOP_CRYPTOCURRENCIES&amp;utm_content=Footer%20Link" target="_blank" rel="nofollow">Investing.com</a></div>
+        
+        </div>
+
+        <br/>        
+        
+        <div class="row custom-border">
+            <h1>Datos Económicos</h1>
+            <div class="col-4">
+
+                <div class="variables-container">
+                    <h5>Selecciona las variables:</h5>
+                    <div id="variables-list" class="variable-list">
+                        <div class="group">
+                            <h4 class="group-header">Fundamentales <span class="toggle-icon">+</span></h4>
+                            <ul class="group-items">                                
+                                <li data-variable="Fundamental-GDP">GDP</li>
+                                <li data-variable="Fundamental-FedFundsRate">FedFundsRate</li>
+                                <li data-variable="Fundamental-CPI (Inflacction)">CPI (Inflacction)</li>
+                                <li data-variable="Fundamental-M1">M1</li>
+                                <li data-variable="Fundamental-M2">M2</li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h4 class="group-header">Index <span class="toggle-icon">+</span></h4>
+                            <ul class="group-items">
+                                <li data-variable="SP500">SP500</li>
+                                <li data-variable="NASDAQ">NASDAQ</li>
+                            </ul>
+                        </div>
+                        <!-- Agrega más grupos y variables según sea necesario -->
+                        <div class="group">
+                            <h4 class="group-header">Bonds <span class="toggle-icon">+</span></h4>
+                            <ul class="group-items">
+                                <li data-variable="US-Bond-1Y">US-Bond-1Y</li>
+                                <li data-variable="US-Bond-2Y">US-Bond-2Y</li>
+                                <li data-variable="US-Bond-3Y">US-Bond-3Y</li>
+                                <li data-variable="US-Bond-5Y">US-Bond-5Y</li>
+                                <li data-variable="US-Bond-10Y">US-Bond-10Y</li>
+                                <li data-variable="US-Bond-30Y">US-Bond-30Y</li>
+                                <li data-variable="GER-Bond-1Y">GER-Bond-1Y</li>
+                                <li data-variable="GER-Bond-2Y">GER-Bond-2Y</li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h4 class="group-header">Comodities <span class="toggle-icon">+</span></h4>
+                            <ul class="group-items">
+                                <li data-variable="GOLD">GOLD</li>
+                                <li data-variable="OIL">OIL</li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h4 class="group-header">ETF <span class="toggle-icon">+</span></h4>
+                            <ul class="group-items">
+                                <li data-variable="variable3">MSCI World</li>
+                                <li data-variable="variable4">Variable 4</li>
+                            </ul>
+                        </div>
+                        <div class="group">
+                            <h4 class="group-header">Stocks <span class="toggle-icon">+</span></h4>
+                            <ul class="group-items">
+                                <li data-variable="variable3">Microsoft</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                                <li data-variable="variable4">Apple</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button id="generate-chart-btn">Generar Gráfica</button>
+                </div>
+            </div>
+            <div class="col-7">
+                
+
+                <div class="row">
+                    <!--<img src="{{url_for('static',filename='images/temp/')}}{{plotImage}}" alt="Chart" width="800" height="800">-->
+                    <div id="imagen-grafica-container">
+                        <!-- Aquí se colocará la imagen -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <br/>
+        
+        <div class="row custom-border">
+            <div class="col-6">
+
+			    <h1>Ciclo Económico</h1>
+                                
+                <div class="slideshow-container">
+                    <div class="slide">
+                      <img src="{{url_for('static',filename='images/')}}cicloEconomico.gif" alt="Imagen 1">
+                    </div>
+                    <div class="slide">
+                      <img src="{{url_for('static',filename='images/')}}ciclo_economico_bursatil.png" alt="Imagen 2">
+                    </div>                   
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                <script>
+
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("slide");
+                    if (n > slides.length) {slideIndex = 1}    
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                    }
+                    slides[slideIndex-1].style.display = "block";  
+                    }
+
+                </script>
+
+
+
 			</div>
+
+            <div class="col-6">
+
+                <h1>Calendario Económico</h1>
+				<br />
+                <iframe src="https://sslecal2.investing.com?columns=exc_flags,exc_currency,exc_importance,exc_actual,exc_forecast,exc_previous&category=_employment,_economicActivity,_inflation,_centralBanks,_confidenceIndex,_balance&importance=3&features=datepicker,timezone&countries=17,25,32,37,26,5,72,22,39,14,10,35,42,7,4,36,12&calType=week&timeZone=58&lang=4" width="650" height="467" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe><div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;"><span style="font-size: 11px;color: #333333;text-decoration: none;">Calendario económico en tiempo real proporcionado por <a href="https://es.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com España</a>.</span></div>
+
+            </div>
+
+            
+				
 		</div>
+
+        <br/>        
 		
-        <br />
+		<div class="row custom-border">
+            <div class="col-6">
+
+                <h1>IA Advisor</h1>  
+
+                <div class="row">
+                    <div class="col-6"><form action="download" method="POST"><input type="submit" value="Download Data"></form></div>
+                    <div class="col-6"><form action="run_lstm" method="POST"><input type="submit" value="Run"></form></div>
+                </div>
+                <div>
+                    <table id="" data-gae="" class="" style="width: 100%;">
+                        <thead>
+                            <td>INDEX</td>
+                            <td>VALUE</td>
+                            <td>TARGET VALUE</td>
+                            <td>STOP LOSS</td>
+                            <td>OPERATION</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                                <td class="" id="">9.694,70</td>
+                                <td class="" id="">+94,20</td>
+                                <td class="" id="">+0,98%</td>
+                                <td class="">BUY</td>
+                            </tr>
+                            <tr>
+                                <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                                <td class="" id="">9.694,70</td>
+                                <td class="" id="">+94,20</td>
+                                <td class="" id="">+0,98%</td>
+                                <td class="">BUY</td>
+                                
+                            </tr>
+                            <tr>
+                                <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                                <td class="" id="">9.694,70</td>
+                                <td class="" id="">+94,20</td>
+                                <td class="" id="">+0,98%</td>
+                                <td class="">BUY</td>
+                            </tr>
+                            <tr>
+                                <td class=""><a href="/indices/spain-35" title="IBEX 35 (CFD)">IBEX 35</a></td>
+                                <td class="" id="">9.694,70</td>
+                                <td class="" id="">+94,20</td>
+                                <td class="" id="">+0,98%</td>
+                                <td class="">BUY</td>
+                            </tr>                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-6">
+				<h1>Técnico</h1>
+				<br/>
+				<iframe src="https://ssltsw.investing.com?lang=4&forex=1,9,6,10,2,5,3&commodities=8830,8836,8831,8849,8833,8832,8851&indices=174,172,27,175,166,23660,179&stocks=474,446,469,345,346,347,348&tabs=1,2,3,4" width="317" height="467"></iframe><div class="poweredBy" style="font-family:arial,helvetica,sans-serif; direction:ltr;"><span style="font-size: 11px;color: #333333;text-decoration: none;">Resumen técnico proporcionado por <a href="https://es.investing.com/" rel="nofollow" target="_blank" style="font-size: 11px;color: #06529D; font-weight: bold;" class="underline_link">Investing.com España</a>.</span></div>            
+            </div>
+					
+	
+        </div>
+
+        <br/>
+	
+        <div class="row custom-border">
+  		
+			<div class="col-12">
+			    <h1>Horario de mercados</h1> (Huso horario Madrid)
+                <br/>
+            	<img src="{{url_for('static',filename='images/')}}horarioMercados.JPG" class="box">
+			</div>
+			
+        </div>	
+
+        <br/>
+		
+		<div class="row custom-border">
+			<div id="divContenedorCripto" class="col-12 contenedor">
+			    <h1>Criptomonedas</h1>
+			    <br/>
+				<iframe 
+                    id="iframeCripto"
+                    src="https://es.widgets.investing.com/top-cryptocurrencies?theme=darkTheme&cols=symbol,priceUsd,marketCap,vol24,totalVol,chg24,chg7" 
+                    width="100%" height="100%" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>
+                <br/>
+            </div>
+		</div>
+
+        <script>
+            // Función para ajustar el tamaño del div al contenido del iframe
+            function ajustarDivAlContenidoIframe() {
+                var iframe = document.getElementById('iframeCripto');
+                var divContenedor = document.getElementById('divContenedorCripto');
+                divContenedor.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+            }
+        
+            // Llama a la función cuando el contenido del iframe se haya cargado completamente
+            document.getElementById('iframeCripto').onload = ajustarDivAlContenidoIframe;
+        </script>
+		
+        <br/>
 
     </div>
 
-	<br />
-	<br />
+	<br/>
+	<br/>
 
     {% include "layout/footer.html" %}
 

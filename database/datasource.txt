@@ -1,0 +1,17 @@
+' En un dia hay 86400, paso de fecha a timestamp unix
+
+NASDAQ Composite (^IXIC):	
+https://query1.finance.yahoo.com/v7/finance/download/%5EIXIC?period1=86400&period2=1900240905&interval=1d&events=history&includeAdjustedClose=true&crumb=wANR/eluUjE
+
+IBEX:
+https://query1.finance.yahoo.com/v7/finance/download/%5EIBEX?period1=86400&period2=1900240905&interval=1d&events=history&includeAdjustedClose=true&crumb=wANR/eluUjE
+
+EUROSTOCK:
+https://query1.finance.yahoo.com/v7/finance/download/%5ESTOXX50E?period1=1679316631&period2=1710939031&interval=1d&events=history&includeAdjustedClose=true
+
+EURUSD:
+https://query1.finance.yahoo.com/v7/finance/download/EURUSD=X?period1=1679313398&period2=1710935798&interval=1d&events=history&includeAdjustedClose=true
+
+ORO:
+GC=F
+
